@@ -132,16 +132,6 @@ const {
 
   {schema && <script type="application/ld+json" set:html={schema} />}
 
-  {
-    import.meta.env.STORYBLOK_IS_PREVIEW === 'no' && (
-      <script
-        data-goatcounter={`https://${import.meta.env.GOATCOUNTER}.goatcounter.com/count`}
-        async
-        src="//gc.zgo.at/count.js"
-      />
-    )
-  }
-
   <!-- Load AOS script asynchonously -->
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="aos.css" />
   <noscript>
