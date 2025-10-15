@@ -9,12 +9,17 @@ const { logo, name, slogan, menu } = Astro.props
   <aside>
     {
       logo?.filename && logo.filename.endsWith('.svg') && (
-        <InlineSvg src={logo.filename} innerclass="rounded-[var(--radius-box)]" innerclass="h-auto max-h-64 w-64" />
+        <InlineSvg src={logo.filename} class="pure rounded-[var(--radius-box)]" innerclass="h-auto max-h-64 w-64" />
       )
     }
     {
       logo?.filename && !logo.filename.endsWith('.svg') && (
-        <Image src={logo.filename} alt={logo.alt} class="rounded-[var(--radius-box)] h-auto max-h-64 w-64" inferSize />
+        <Image
+          src={logo.filename}
+          alt={logo.alt}
+          class="pure rounded-[var(--radius-box)] h-auto max-h-64 w-64"
+          inferSize
+        />
       )
     }
     <p>

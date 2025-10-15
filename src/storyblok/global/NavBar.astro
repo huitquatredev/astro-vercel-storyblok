@@ -15,12 +15,12 @@ const currentPath = Astro.url.pathname
         aria-label={name}>
         {
           logo?.filename && logo.filename.endsWith('.svg') && (
-            <InlineSvg src={logo.filename} class="w-64 " innerclass="h-[90px]" />
+            <InlineSvg src={logo.filename} class="pure w-64 " innerclass="h-[90px]" />
           )
         }
         {
           logo?.filename && !logo.filename.endsWith('.svg') && (
-            <Image src={logo.filename} alt={name} class="max-h-[90px] h-auto w-auto max-w-64" inferSize />
+            <Image src={logo.filename} alt={name} class="pure max-h-[90px] h-auto w-auto max-w-64" inferSize />
           )
         }
       </a>

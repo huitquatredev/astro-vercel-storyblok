@@ -16,4 +16,8 @@
   html {
     text-decoration-skip-ink: none;
   }
+
+  .pure {
+    stroke: unset !important;
+  }
 }
